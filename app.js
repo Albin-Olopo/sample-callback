@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI)
 const callbackRoute = require('./routes/callback');
 
 // Use routes
-app.use('/api/callback', callbackRoute);
+app.use('/api/notifications', callbackRoute);
 
 // Start the server
 const PORT = process.env.PORT || 3000;
